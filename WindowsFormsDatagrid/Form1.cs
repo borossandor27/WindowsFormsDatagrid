@@ -21,10 +21,9 @@ namespace WindowsFormsDatagrid
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //-- columns.json-ban lévő adatokból a ListBox_Oszlopok feltöltése
-            var jsonString = File.ReadAllText("oszlopok.json");
-            List<Oszlop> oszlopok = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Oszlop>>(jsonString);
-            listBox_Oszlopok.DataSource = oszlopok;
+            listBox_Oszlopok.Items.Add("*");
+            ListBox_Oszlopok_Feltoltese();
+       
             listBox_Oszlopok.DisplayMember = "Megjegyzés";
             listBox_Oszlopok.ValueMember = "ColumnName";
             listBox_Oszlopok.SelectedIndex = -1;
@@ -32,9 +31,26 @@ namespace WindowsFormsDatagrid
             listBox_Oszlopok.SelectionMode = SelectionMode.MultiSimple;
         }
 
+        private void ListBox_Oszlopok_Feltoltese()
+        {
+            //-- oszlopok.json-ban lévő adatokból a ListBox_Oszlopok feltöltése
+            var jsonString = File.ReadAllText("oszlopok.json");
+            List<Oszlop> oszlopok = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Oszlop>>(jsonString);
+            foreach (Oszlop oszlop in oszlopok)
+            {
+                listBox_Oszlopok.Items.Add(oszlop);
+            }
+            //listBox_Oszlopok.DataSource = oszlopok;
+        }
+
         private void ListBox_Oszlopok_SelectedIndexChanged(object sender, EventArgs e)
         {
             return  ;
+        }
+
+        private void button_Frissit_Click(object sender, EventArgs e)
+        {
+         List<Oszlop> KivalasztottOszlopok = listBox_Oszlopok.SelectedItems.Cast<Oszlop>().ToList();
         }
     }
 }

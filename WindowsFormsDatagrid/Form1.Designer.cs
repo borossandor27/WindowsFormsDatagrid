@@ -112,6 +112,7 @@
             this.button_Frissit.TabIndex = 4;
             this.button_Frissit.Text = "Frissít";
             this.button_Frissit.UseVisualStyleBackColor = true;
+            this.button_Frissit.Click += new System.EventHandler(this.button_Frissit_Click);
             // 
             // Form1
             // 
