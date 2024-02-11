@@ -1,0 +1,114 @@
+[
+  {
+    "column_name": "orszag",
+    "DATA_TYPE": "varchar",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "az ország neve"
+  },
+  {
+    "column_name": "fovaros",
+    "DATA_TYPE": "varchar",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "az ország fővárosa"
+  },
+  {
+    "column_name": "foldr_hely",
+    "DATA_TYPE": "varchar",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "földrajzi elhelyezkedés"
+  },
+  {
+    "column_name": "terulet",
+    "DATA_TYPE": "decimal",
+    "NUMERIC_PRECISION,": "11",
+    "NUMERIC_SCALE": "2",
+    "megjegyzés": "terület km2-ben"
+  },
+  {
+    "column_name": "allamforma",
+    "DATA_TYPE": "varchar",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "államforma"
+  },
+  {
+    "column_name": "nepesseg",
+    "DATA_TYPE": "int",
+    "NUMERIC_PRECISION,": "10",
+    "NUMERIC_SCALE": "0",
+    "megjegyzés": "népesség 1000 főben van megadva!"
+  },
+  {
+    "column_name": "nep_fovaros",
+    "DATA_TYPE": "int",
+    "NUMERIC_PRECISION,": "10",
+    "NUMERIC_SCALE": "0",
+    "megjegyzés": "a főváros népessége 1000 főben van megadva!"
+  },
+  {
+    "column_name": "autojel",
+    "DATA_TYPE": "char",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "autójel"
+  },
+  {
+    "column_name": "country",
+    "DATA_TYPE": "varchar",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "országnév ékezetes írás nélkül, idegen elnevezések..."
+  },
+  {
+    "column_name": "capital",
+    "DATA_TYPE": "varchar",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "főváros ékezetes írás nélkül, idegen elnevezésekke..."
+  },
+  {
+    "column_name": "penznem",
+    "DATA_TYPE": "varchar",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "pénznem"
+  },
+  {
+    "column_name": "penzjel",
+    "DATA_TYPE": "char",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "pénzjel"
+  },
+  {
+    "column_name": "valtopenz",
+    "DATA_TYPE": "varchar",
+    "NUMERIC_PRECISION,": null,
+    "NUMERIC_SCALE": null,
+    "megjegyzés": "váltópénz a váltószámmal együtt"
+  },
+  {
+    "column_name": "telefon",
+    "DATA_TYPE": "int",
+    "NUMERIC_PRECISION,": "10",
+    "NUMERIC_SCALE": "0",
+    "megjegyzés": "nemzetközi telefon-hívószám"
+  },
+  {
+    "column_name": "gdp",
+    "DATA_TYPE": "int",
+    "NUMERIC_PRECISION,": "10",
+    "NUMERIC_SCALE": "0",
+    "megjegyzés": "egy főre jutó bruttó hazai termék USA dollárban (G..."
+  },
+  {
+    "column_name": "kat",
+    "DATA_TYPE": "int",
+    "NUMERIC_PRECISION,": "10",
+    "NUMERIC_SCALE": "0",
+    "megjegyzés": "ismertségi kategória (1,2,3)"
+  }
+]
